@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import HelloWorld from './components/HelloWorld';
+import LangSelector from './components/LangSelector';
+import ReactExample from './components/ReactExample';
+import ThankYou from './components/ThankYou';
 
+
+ 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <h3>Implement multi-languages in React - </h3>
+      <LangSelector />
+      <div className="app">
+        <HelloWorld />
+        <ReactExample />
+        <ThankYou />
+      </div>
+    </React.Fragment>
   );
 }
-
+ 
 export default App;
